@@ -152,6 +152,7 @@
 }
 .product-card{
     width: 100%;
+    position: relative;
 }
 .product-image{
     height: 400px;
@@ -174,4 +175,34 @@
     font-weight: 500;
     color: #9999fe;
 } 
+
+.option{
+    width: 270px;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    left: 22px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.option button{
+    border: none;
+    background-color: transparent;
+}
+.option button:nth-child(2){
+    font-size: 20px;
+}
+.option button:nth-child(3){
+    font-size: 20px;
+}
+
+.product-card:hover .option{
+    top: 180px;
+    opacity: 1;
+}
+
 /* =============Collection========= */
