@@ -206,3 +206,72 @@
 }
 
 /* =============Collection========= */
+
+
+/* ============Feature Product============= */
+
+.feature-product-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    gap: 25px;
+    padding: 20px 100px;
+}
+.feature-card{
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.feature-product-container .feature-card:first-child{
+    background-image: url(images/collection-item1.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    grid-row: span 2;
+    padding-left: 300px;
+}
+.feature-product-container .feature-card:nth-child(2){
+    background-image: url(images/collection-item2.jpg);
+    padding: 50px;
+}
+.feature-product-container .feature-card:nth-child(3){
+    background-image: url(images/collection-item3.jpg);
+    padding: 50px;
+}
+.feature-card h4{
+    font-size: 19px;
+    font-weight: 300;
+    color: #5e5656;
+}
+.feature-card h2{
+    font-size: 55px;
+    line-height: 50px;
+    margin: 15px 0px;
+}
+.feature-card p{
+    margin-bottom: 15px;
+    color: #777171;
+}
+.feature-card button{
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.feature-card button:hover{
+    color: #768aff;
+}
+
+/* ============Feature Product============= */
+
+.categories{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin-top: 15px;
+    color: gray;
+}
+.categories li:hover{
+    color: blueviolet;
+}
